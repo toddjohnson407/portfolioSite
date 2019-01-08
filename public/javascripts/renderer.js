@@ -2,6 +2,10 @@ var animateGo = document.getElementById("animate");
 var helloName = document.getElementById("main");
 var visible = false;
 
+$('.card').click(function(){
+  $(this).toggleClass('flipped');
+});
+
 var unVeil = function () {
   animateGo.style.display = 'block';
   visible = true;
