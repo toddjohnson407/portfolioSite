@@ -5,6 +5,12 @@ body {
   width: 100%;
 }
 
+h2 {
+  color: white !important;
+  font-size: 6vh !important;
+  font-weight: bold !important;
+}
+
 a {
   font-style: none;
   color: white;
@@ -19,14 +25,15 @@ a:hover {
 #projects {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
 }
 
 .project {
-  margin: 20vh;
+  margin-bottom: 5vh;
+  margin-top: 2vh;
   justify-self: center;
-  margin-right: 35vh;
 }
 
 #main {
@@ -50,6 +57,15 @@ a:hover {
   background-color: brown !important;
   width: 100%;
   height: 15vh;
+}
+
+#footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 15vh;
+  background-color: brown;
 }
 
 #welcome {
@@ -80,13 +96,18 @@ a:hover {
   background: red;
 }
 
+#projects-title {
+  font-size: 8vh;
+  margin-bottom: 2vh;
+}
+
 .contained, figure{
-  width:450px;
-  height: 270px;
+  width: 100vh;
+  height: 55vh;
 }
 
 .contained{
-  position:absolute;
+  /*position:absolute;*/
   perspective:1000;
 /*  margin-top:-135px;
   top:50%;*/
