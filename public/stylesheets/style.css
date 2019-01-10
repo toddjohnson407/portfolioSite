@@ -1,6 +1,6 @@
 body {
   font-family: 'Thasadith', sans-serif;
-  background-image: linear-gradient(to right, #F5CA74, #F6B901);
+  background-color: white;
   color: white;
   width: 100%;
 }
@@ -20,6 +20,12 @@ a:hover {
   font-style: none;
   text-decoration: none;
   color: grey;
+}
+
+#topit {
+  width: 100%;
+  height: 5vh;
+  background-color: white;
 }
 
 #projects {
@@ -79,13 +85,17 @@ a:hover {
 
 .item-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
 
 .navigate-items {
   font-size: 2.2vh;
+}
+
+#about-title {
+  color: black;
 }
 
 #animate {
@@ -99,6 +109,14 @@ a:hover {
 #projects-title {
   font-size: 8vh;
   margin-bottom: 2vh;
+  color: black !important;
+}
+#projects-title a {
+  color: black;
+}
+
+#projects-title a:hover {
+  color: grey;
 }
 
 .contained, figure{
@@ -107,10 +125,7 @@ a:hover {
 }
 
 .contained{
-  /*position:absolute;*/
   perspective:1000;
-/*  margin-top:-135px;
-  top:50%;*/
 }
 
 .card{
@@ -244,7 +259,7 @@ figure .caption {
   right: 30px;
   bottom: 30px;
   left: 30px;
-  content: '';
+  /*content: '';*/
   opacity: 0;
   transition: opacity 0.45s, transform 0.45s;
   transition-delay: 1s;
@@ -283,6 +298,10 @@ figure .caption {
 .card.flipped .back dl {
   opacity: 1;
   transform: translate3d(0,0,0);
+}
+
+dl:hover {
+  color: brown;
 }
 
 dl dt{
@@ -326,6 +345,7 @@ figure a{
   width: 100%;
   height: 100%;
 }
+
 /*
 @media (min-width: 450px) {
   .container{
