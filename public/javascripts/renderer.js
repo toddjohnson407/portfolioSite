@@ -37,5 +37,11 @@ var thisAnimation = function () {
   }
 }
 
-animateGo.onclick = function() { thisAnimation() };
-helloName.onmouseover = function() { unVeil() };
+var options = { alignment: 'left', hover: true };
+// animateGo.onclick = function() { thisAnimation() };
+// helloName.onmouseover = function() { unVeil() };
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems, options);
+});

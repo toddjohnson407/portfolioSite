@@ -7,19 +7,23 @@ body {
 
 h2 {
   color: white !important;
-  font-size: 6vh !important;
-  font-weight: bold !important;
+  font-size: 7vh !important;
+  /*font-weight: bold !important;*/
 }
 
 a {
   font-style: none;
-  color: white;
+  color: white !important;
 }
 
 a:hover {
   font-style: none;
   text-decoration: none;
-  color: grey;
+  color: grey !important;
+}
+
+.title {
+  color: black;
 }
 
 #topit {
@@ -60,7 +64,8 @@ a:hover {
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 1fr;
-  background-color: brown !important;
+  background-color: #0A373A !important;
+  opacity: .8;
   width: 100%;
   height: 15vh;
 }
@@ -71,7 +76,9 @@ a:hover {
   justify-items: center;
   width: 100%;
   height: 15vh;
-  background-color: brown;
+  background-color: #0A373A !important;
+  opacity: .8;
+  margin-top: 3.2vh;
 }
 
 #welcome {
@@ -284,7 +291,7 @@ figure .caption {
 }
 
 .back dl{
-  font-family:'Lato', Arial, sans-serif;
+  /*font-family:'Lato', Arial, sans-serif;*/
   font-weight:300;
   bottom:40px;
   left:40px;
@@ -346,12 +353,59 @@ figure a{
   height: 100%;
 }
 
-/*
-@media (min-width: 450px) {
-  .container{
-    left: 50%;
-    margin-left:-225px;
-  }
-}*/
+#my-cards {
+  display: grid;
+  grid-template-rows: 1fr 1.7fr 1.7fr;
+  justify-items: center;
+  align-itmes: center;
+}
 
+.my-card {
+  background-color: #0A373A !important;
+  opacity: .8;
+  width: 60%;
+  height: 55vh;
+  margin: 4vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.my-card-top {
+  background-color: #0A373A !important;
+  opacity: .8;
+  width: 80%;
+  height: 25vh;
+  margin: 4vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.my-card-top:hover {
+  /*opacity: .7;*/
+}
+
+.card-content {
+  font-size: 2.2vh;
+  padding: 5vh;
+}
+
+.card-content-top {
+  font-size: 6vh;
+  padding: 8vh;
+}
+
+#skills-title {
+  font-size: 3vh;
+}
+
+.card-content ul:not(.browser-default)>li {
+    list-style-type: disc !important;
+}
+
+.coll-header {
+  color: black;
+  opacity: 0.75;
+}
 
