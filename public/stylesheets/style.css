@@ -367,7 +367,6 @@ figure a{
 }
 
 .my-card {
-
   background-color: transparent !important;
   opacity: .8;
   width: 60%;
@@ -398,7 +397,8 @@ figure a{
   padding: 5vh;
   color: black !important;
   font-weight: 1000;
-  opacity: 0.75;
+  opacity: .7;
+  /*background-color: grey;*/
 }
 
 .card-content-top {
@@ -419,3 +419,12 @@ figure a{
   opacity: 0.75;
 }
 
+.contact-card {
+  display: grid;
+  align-items: center;
+  font-style: italic;
+  margin: 10vh;
+  height: 28vh;
+  background-color: grey;
+  width: 80%;
+}
