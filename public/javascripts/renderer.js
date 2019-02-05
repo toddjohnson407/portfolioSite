@@ -1,47 +1,22 @@
-var animateGo = document.getElementById("animate");
-var helloName = document.getElementById("main");
-var visible = false;
+// @toddjohnson - home page
 
-$('.card').click(function(){
-  $(this).toggleClass('flipped');
-});
+var homeInfo = document.getElementById('brief');
 
-var unVeil = function () {
-  animateGo.style.display = 'block';
-  visible = true;
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-var thisAnimation = function () {
-  var right = true;
-  var anim = document.getElementById("animate");
-  var pos = 48;
-  if (visible) {
-    var id = setInterval(function() {frame()}, 12);
-  }
-  var frame = function() {
-    if (pos == 100) {
-      right = false;
-    }
-    if (pos == 0 && right == false) {
-      right = true;
-    }
-    if (right == false) {
-      pos--;
-      anim.style.left = pos + '%';
-      anim.style.opacity = pos/100;
-    } else {
-      pos++;
-      anim.style.left = pos + '%';
-      anim.style.opacity = pos/100;
-    }
-  }
+var hideHomeInfo = function() {
+  homeInfo.style = 'display: none';
 }
 
-var options = { alignment: 'left', hover: true };
-// animateGo.onclick = function() { thisAnimation() };
-// helloName.onmouseover = function() { unVeil() };
+var activateAnimation = async function() {
+  await sleep(200);
+  develop.setAttribute("class", "dev dev-animation");
+  homeInfo.style = 'display: block';
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.collapsible');
-  var instances = M.Collapsible.init(elems, options);
-});
+var develop = document.getElementById('dev');
+
+// develop.onmouseout = function() { hideHomeInfo() };
+activateAnimation();

@@ -1,20 +1,22 @@
-body {
-  font-family: 'Thasadith', sans-serif !important;
-  background-image: url('../images/blurredfence.jpg');
+html, body {
+  font-family: 'Abel', sans-serif !important;
+  /*background-image: url('../images/blurredfence.jpg');*/
   background-size: cover;
+  background-color: #2A2A2A;
   color: white;
   width: 100%;
+  text-transform: uppercase !important;
+  height: 100%;
 }
 
 h2 {
   color: white !important;
   font-size: 7vh !important;
   font-family: 'Thasadith', sans-serif !important;
-  /*font-weight: bold !important;*/
 }
 
 a {
-  font-style: none;
+  font-style: none !important;
   color: white !important;
 }
 
@@ -24,8 +26,27 @@ a:hover {
   color: grey !important;
 }
 
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+input {
+  border-color: black;
+  border-width: 1px;
+}
+
+input:focus {
+  outline: none;
+}
+
 .title {
   color: black;
+}
+
+#contain {
+  position: relative;
+  min-height: 100%;
 }
 
 #topit {
@@ -43,13 +64,17 @@ a:hover {
 }
 
 .project {
-  margin-bottom: 5vh;
+  margin-bottom: 7vh;
   margin-top: 2vh;
   justify-self: center;
 }
 
+.project img {
+  filter: brightness(70%);
+}
+
 #main {
-  margin-top: 5vh;
+  margin-top: 15vh;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -63,26 +88,25 @@ a:hover {
 }
 
 #navigate {
+  margin-top: 2vh;
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 1fr;
-  /*background-color: #0A373A !important;*/
-  opacity: .8;
   width: 100%;
   height: 15vh;
+  margin-bottom: 8vh;
 }
 
 #footer {
+  margin-bottom: -2vh;
   position: absolute;
+  bottom: 0;
   display: grid;
   align-items: center;
   justify-items: center;
   width: 100%;
-  height: 15vh;
-  /*background-color: #0A373A !important;*/
-  opacity: .8;
-  margin-top: 3.2vh;
-  bottom: 0;
+  height: 10vh;
+  background-color: black !important;
 }
 
 #welcome {
@@ -94,16 +118,26 @@ a:hover {
   font-size: 2vh;
 }
 
+#brief {
+  color: black;
+  font-size: 2vh;
+}
+
 .item-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  margin-top: 4vh;
 }
 
 .navigate-items {
   font-size: 2.2vh;
   font-weight: bold;
+}
+
+.nav-item-back {
+
 }
 
 #about-title {
@@ -119,17 +153,171 @@ a:hover {
 }
 
 #projects-title {
-  font-size: 7vh;
-  margin-bottom: 2vh;
-  /*color: black !important;*/
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 4vh;
 }
+
 #projects-title a {
   color: black;
   font-weight: bold;
 }
 
-#projects-title a:hover {
-  color: grey;
+#projects-title-back {
+  background-color: black;
+  display: grid;
+  justify-items: center;
+  width: 30%;
+  height: 10vh;
+}
+
+/*.animation-active {
+  animation-name: unprojected;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}*/
+
+#projects-title-back {
+  animation-name: projected;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#projects-head {
+  text-align: center;
+}
+
+#project-container {
+  margin-top: 15vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#project-container {
+  animation-name: marginalized;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/*.container-animation {
+  animation-name: unmarginalized;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}*/
+
+@keyframes marginalized {
+  from {
+    margin-top: 15vh;
+  }
+  to {
+    margin-top: 0vh
+  }
+}
+
+@keyframes unmarginalized {
+  from {
+    margin-top: 0vh;
+  }
+  to {
+    margin-top: 15vh
+  }
+}
+
+@keyframes projected {
+  from {
+    color: white;
+    background-color: black;
+    /*width: 30%;*/
+    padding-bottom: 0;
+  }
+  to {
+    margin-top: 0vh;
+    color: black;
+    background-color: white;
+    width: 80%;
+    padding-bottom: 220vh;
+    padding-right: 10vh;
+    padding-left: 10vh;
+  }
+}
+
+@keyframes unprojected {
+  from {
+    color: black;
+    background-color: white;
+    width: 80%;
+  }
+  to {
+    width: 40%;
+    color: white;
+    background-color: black;
+  }
+}
+
+#todd {
+  position: relative;
+  width: 12%;
+}
+
+#johnson {
+  position: absolute;
+  width: 14%;
+  margin-top: -1.1vh;
+  margin-left: 2vh;
+}
+
+#dev {
+  display: grid;
+  align-items: top !important;
+  justify-items: center !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  background-color: black;
+  padding: 2vh 4vh 2vh 4vh;
+  width: 120vh;
+  height: 25vh;
+  text-align: center;
+  font-size: 14vh;
+}
+
+#programmer {
+  display: grid;
+}
+
+.dev-animation {
+  animation-name: develop;
+  animation-duration: 1s;
+  text-align: center;
+  animation-fill-mode: forwards;
+}
+
+@keyframes develop {
+  from {
+    color: white;
+    background-color: black;
+  }
+  to {
+    width: 100%;
+    padding-bottom: 60vh;
+    color: black;
+    background-color: white;
+  }
+}
+
+@keyframes revert {
+  from {
+    width: 100%;
+    padding-bottom: 60vh;
+    color: black;
+    background-color: white;
+  }
+  to {
+    color: white;
+    background-color: black;
+  }
 }
 
 .contained, figure{
@@ -177,7 +365,7 @@ figure img{
   display: block;
   height: 100%;
   width: 100%;
-  opacity: 0.7;
+  /*opacity*/: 0.7;
 }
 
 figure .caption {
@@ -203,13 +391,13 @@ figure .caption {
   height: 100%;
   background: linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
   content: '';
-  opacity: 0;
+  /*opacity*/: 0;
   transform: translate3d(0,50%,0);
-  transition: opacity 0.35s, transform 0.35s;
+  transition: /*opacity*/ 0.35s, transform 0.35s;
 }
 
 .front:hover .caption:before{
-  opacity: 1;
+  /*opacity*/: 1;
   transform: translate3d(0,0,0);
 }
 
@@ -260,9 +448,9 @@ figure .caption {
   left: 0;
   padding: 2em;
   width: 100%;
-  opacity: 0;
+  /*opacity*/: 0;
   transform: translate3d(0,10px,0);
-  transition: opacity 0.35s, transform 0.35s;
+  transition: /*opacity*/ 0.35s, transform 0.35s;
 }
 
 .back .caption:before,
@@ -273,8 +461,8 @@ figure .caption {
   bottom: 30px;
   left: 30px;
   /*content: '';*/
-  opacity: 0;
-  transition: opacity 0.45s, transform 0.45s;
+  /*opacity*/: 0;
+  transition: /*opacity*/ 0.45s, transform 0.45s;
   transition-delay: 1s;
 }
 
@@ -292,7 +480,7 @@ figure .caption {
 
 .card.flipped .back .caption:before,
 .card.flipped .back .caption:after {
-  opacity: .9;
+  /*opacity*/: .9;
   transform: scale(1);
 }
 
@@ -302,14 +490,14 @@ figure .caption {
   bottom:40px;
   left:40px;
   position: absolute;
-  opacity: 0;
-  transition: opacity .35s, transform .35s;
+  /*opacity*/: 0;
+  transition: /*opacity*/ .35s, transform .35s;
   transition-delay: .85s;
   transform: translate3d(-40px,0,0);
 }
 
 .card.flipped .back dl {
-  opacity: 1;
+  /*opacity*/: 1;
   transform: translate3d(0,0,0);
 }
 
@@ -342,7 +530,7 @@ dl dd:after{
 }
 
 .front:hover p {
-  opacity: 1;
+  /*opacity*/: 1;
   transform: translate3d(0,0,0);
 }
 
@@ -351,7 +539,7 @@ figure a{
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
-  opacity: 0;
+  /*opacity*/: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -359,72 +547,132 @@ figure a{
   height: 100%;
 }
 
-#my-cards {
-  display: grid;
-  /*grid-template-rows: .5fr 2fr 2fr;*/
-  justify-items: center;
-  align-itmes: center;
-}
-
-.my-card {
-  background-color: transparent !important;
-  opacity: .8;
-  width: 60%;
-  height: 28vh;
-  /*margin: 4vh;*/
-  display: grid;
-  align-items: end;
-  justify-items: center;
-}
-
-.my-card-top {
-  background-color: #0A373A !important;
-  opacity: .8;
-  width: 80%;
-  height: 12vh;
-  margin: 4vh;
+#contact-me {
   display: grid;
   align-items: center;
   justify-items: center;
+  font-size: 2vh;
+  grid-template-columns: 100px [main-start] 1fr [main-end] 100px;
+  animation-name: contacting;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
-.my-card-top:hover {
-  /*opacity: .7;*/
-}
-
-.card-content {
-  font-size: 2.2vh;
-  padding: 5vh;
-  color: black !important;
-  font-weight: 1000;
-  opacity: .7;
-  /*background-color: grey;*/
-}
-
-.card-content-top {
-  font-size: 3vh;
-  /*padding: 8vh;*/
-}
-
-#skills-title {
-  font-size: 3vh;
-}
-
-.card-content ul:not(.browser-default)>li {
-    list-style-type: disc !important;
-}
-
-.coll-header {
+#contact-form {
+  width: 50vh;
+  background-color: white !important;
   color: black;
-  opacity: 0.75;
+  padding: 2vh;
+  margin-top: -4vh;
+  text-align: center;
+  animation-name: blackdrop;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
-.contact-card {
+#about-inquiries {
+  font-size: 2vh;
+  text-align: center;
+}
+
+@keyframes contacting {
+  from {
+    background-color: white;
+    padding-bottom: 0;
+  }
+  to {
+    background-color: black;
+    padding-bottom: 10vw;
+    width: 100%;
+  }
+}
+
+/*@keyframes blackdrop {
+  from {
+    padding: 0vh;
+  }
+  to {
+    background-color: white;
+    padding-bottom: 3vh;
+  }
+}*/
+
+#black-drop {
+  grid-area: main;
+  margin-top: 4vh;
+}
+
+#message {
+  resize: none;
+  border-color: black;
+  border-width: 1px;
+}
+
+#inquiry-button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1vh 2vh 1vh 2vh;
+}
+
+#contact-title {
+  color: black;
+  font-size: 4vh;
+  background-color: white;
+  width: 50%;
+  animation-name: titleAdjust;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes titleAdjust {
+  from {
+    color: black;
+    background-color: white;
+  }
+  to {
+    color: white;
+    background-color: black;
+  }
+}
+
+#contacted {
+  text-align: center;
+  background-color: white !important;
+  color: black;
+  width: 50vh;
+  animation-name: contacted;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0.0;
+}
+
+@keyframes contacted {
+  from {
+    opacity: 0.0;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+
+.black-back {
+  padding: 2vh 3vh 2vh 3vh;
+  background-color: black !important;
+  color: white;
   display: grid;
   align-items: center;
-  font-style: italic;
-  margin: 10vh;
-  height: 28vh;
-  background-color: grey;
-  width: 80%;
+  justify-items: center;
+  text-align: center;
+}
+
+.white-back {
+  margin-left: 3vh;
+  padding: 2vh 3vh 2vh 3vh;
+  background-color: white !important;
+  color: black;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }

@@ -5,36 +5,84 @@
     <title>Todd Johnson's Projects</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_jNFuefEFTbVTttVQlDw20");
+       })();
+    </script>
   </head>
   <body>
-    <!-- <div id="topit"></div> -->
-    <div id="navigate">
-      <a href="/">
-        <div id="wrap">
-          <div id="welcome">Todd Johnson</div>
-          <div id="below-welcome">Web Developer</div>
+    <div id="contain">
+      <div id="navigate">
+
+        <a href="/">
+          <div id="wrap">
+            <link rel="stylesheet" type="text/css" href="/">
+            <div class="logo">
+              <img src="./images/todd.png" id="todd">
+              <br>
+              <img src="./images/johnson.png" id="johnson">
+            </div>
+          </div>
+        </a>
+
+        <div class="item-list">
+          <div class="black-back">
+           <div class="navigate-items"><a href="about.html">CONTACT</a></div>
+          </div>
+          <div class="black-back">
+            <div class="navigate-items"><a href="projects.html">MY PROJECTS</a></div>
+          </div>
         </div>
-      </a>
-      <div class="item-list">
-        <div class="navigate-items"><a href="about.html">Contact</a></div>
-        <div class="navigate-items"><a href="projects.html">My Projects</a></div>
+
       </div>
+
+
+      <br>
+
+      <div id="contact-me">
+
+        <br><br><br><br><br><br>
+        <div class="white-back">
+          <div id="about-inquiries">
+            If you are interested in working on a project together,
+            please submit an inquiry and I will be in contact with you a soon as possible.
+          </div>
+        </div>
+
+        <div id="black-drop">
+          <div id="contacted">
+            <br>
+            <center><div id="contact-title">CONTACT ME</div></center>
+            <br><br>
+            <form id="contact-form">
+              Name: <br>
+              <input type="text" name="name" id="users-name" class="contact-input">
+              <br><br>
+              Email: <br>
+              <input type="text" name="email" id="email" class="contact-input">
+              <br><br>
+              Message: <br>
+              <textarea name="message" id="message" class="contact-input" rows="6" cols="40"></textarea>
+              <br><br>
+              <div id="inquiry-button">SEND INQUIRY</div>
+              <br><br>
+            </form>
+          </div>
+        </div>
+        <div></div>
+
+      </div>
+
+      <div id="footer">
+        <div class="links">
+          Todd Johnson - Developer
+        </div>
+      </div>
+      <script type="text/javascript" src="javascripts/contact.js"></script>
     </div>
-    <center>
-      <h1 id="projects-title">Contact Me</h1>
-      <div class="contact-card">
-        <center>
-          <h3>If you are interested in contacting me about a project email me at toddjohnson407@gmail.com.</h3>
-        </center>
-      </div>
-    </center>
-    <div id="footer">
-      <div class="links">
-        Todd Johnson - Developer
-      </div>
-    </div>
-    <script>
-    </script>
   </body>
 </html>
