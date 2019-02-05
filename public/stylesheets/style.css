@@ -12,7 +12,7 @@ html, body {
 h2 {
   color: white !important;
   font-size: 7vh !important;
-  font-family: 'Thasadith', sans-serif !important;
+  /*font-family: 'Thasadith', sans-serif !important;*/
 }
 
 a {
@@ -161,7 +161,7 @@ input:focus {
 
 #projects-title a {
   color: black;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 #projects-title-back {
@@ -186,6 +186,7 @@ input:focus {
 
 #projects-head {
   text-align: center;
+  font-size: 60px;
 }
 
 #project-container {
@@ -415,7 +416,7 @@ figure .caption {
 }
 
 .front h2 span {
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .front h2:after{
