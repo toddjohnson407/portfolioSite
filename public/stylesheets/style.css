@@ -721,8 +721,8 @@ uiries {
           animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
@@ -757,8 +757,8 @@ uiries {
           animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   text-align: center;
   font-size: 60px;
   background-color: black !important;
