@@ -1,5 +1,6 @@
 // @toddjohnson - home page
 
+
 var homeInfo = document.getElementById('brief');
 
 function sleep(ms) {
@@ -11,9 +12,15 @@ var hideHomeInfo = function() {
 }
 
 var activateAnimation = async function() {
-  await sleep(200);
+  await sleep(300);
   develop.setAttribute("class", "dev dev-animation");
-  homeInfo.style = 'display: block';
+  await sleep(300);
+  if (window.safari != undefined) {
+    homeInfo.style = 'display: block; margin-top: -28.75vw;';
+  } else {
+    homeInfo.style = 'display: block;';
+  }
+
 }
 
 var develop = document.getElementById('dev');
