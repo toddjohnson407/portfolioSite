@@ -16,7 +16,8 @@ var activateAnimation = async function() {
   develop.setAttribute("class", "dev dev-animation");
   await sleep(300);
   if (window.safari != undefined) {
-    homeInfo.style = 'display: block; margin-top: -28.75vw;';
+    // homeInfo.style = 'display: block; margin-top: -28.75vw;';
+    homeInfo.style = 'display: block;';
   } else {
     homeInfo.style = 'display: block;';
   }

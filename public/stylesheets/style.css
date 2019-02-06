@@ -479,7 +479,7 @@ figexent: 200%;
   margin-top: -4vh;
   text-align: center;
 }
-uiries {
+#about-inquiries {
   font-size: 2vh;
   text-align: center;
 }
@@ -496,6 +496,8 @@ uiries {
 }
 
 #inquiry-button {
+  width: 30vh;
+  cursor: pointer;
   border: none;
   background-color: black;
   color: white;
@@ -629,7 +631,7 @@ uiries {
     width: 100%;
     margin-top: -4vh;
     margin-bottom: 10vh;
-    padding-bottom: 65vh;
+    padding-bottom: 59vh;
     padding-top: 5vh;
     color: black;
     background-color: white;
