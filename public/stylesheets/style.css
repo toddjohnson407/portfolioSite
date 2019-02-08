@@ -148,14 +148,6 @@ input:focus {
   /*color: black;*/
 }
 
-/*#projects-title-back {
-  background-color: black;
-  display: grid;
-  justify-items: center;
-  width: 30%;
-  height: 10vh;
-}*/
-
 #project-container {
   margin-top: 15vh;
   display: grid;
@@ -268,6 +260,10 @@ figure .caption {
   font-size: 1.25em;
 }
 
+.caption:hover {
+  font-weight: bold;
+}
+
 .front .caption:before {
   position: absolute;
   top: 0;
@@ -313,9 +309,6 @@ figure .caption {
   -webkit-transform: translate3d(0,-50%,0);
 }
 
-.front h2 span {
-}
-
 .front h2:after{
   position: absolute;
   bottom: -10px;
@@ -335,7 +328,6 @@ figure .caption {
 }
 
 .front:hover h2 {
-  color: #fff;
   -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
   transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 }
@@ -353,7 +345,7 @@ figure .caption {
   left: 0;
   padding: 2em;
   width: 100%;
-  /*opacity*/: 0;
+  /*opacity: 0;*/
   transform: translate3d(0,10px,0);
   -webkit-transform: translate3d(0,10px,0);
   -webkit-transition: /*opacity*/ 0.35s, -webkit-transform 0.35s;
@@ -363,68 +355,6 @@ figure .caption {
   transition: /*opacity*/ 0.35s, -webkit-transform 0.35s;
 }
 
-.back .caption:before,
-.back .caption:after{
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  -webkit-transition: 0.45s, -webkit-transform 0.45s;
-  transition: 0.45s, -webkit-transform 0.45s;
-  -o-transition: 0.45s, transform 0.45s;
-  transition: 0.45s, transform 0.45s;
-  transition: 0.45s, transform 0.45s, -webkit-transform 0.45s;
-  -webkit-transition-delay: 1s;
-       -o-transition-delay: 1s;
-          transition-delay: 1s;
-}
-
-.back .caption:before{
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -ms-transform: scale(0,1);
-      transform: scale(0,1);
-  -webkit-transform: scale(0,1);
-}
-
-.back .caption:after{
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-  -ms-transform: scale(1,0);
-      transform: scale(1,0);
-  -webkit-transform: scale(1,0);
-}
-
-.card.flipped .back .caption:before,
-.card.flipped .back .caption:after {
-  -ms-transform: scale(1);
-      transform: scale(1);
-  -webkit-transform: scale(1);
-}
-
-.back dl{
-  font-weight:300;
-  bottom:40px;
-  left:40px;
-  position: absolute;
-  -webkit-transition: .35s, -webkit-transform .35s;
-  transition: .35s, -webkit-transform .35s;
-  -o-transition: .35s, transform .35s;
-  transition: .35s, transform .35s;
-  transition: .35s, transform .35s, -webkit-transform .35s;
-  -webkit-transition-delay: .25s;
-       -o-transition-delay: .25s;
-          transition-delay: .25s;
-  transform: translate3d(-40px,0,0);
-  -webkit-transform: translate3d(-40px,0,0);
-}
-
-.card.flipped .back dl {
-  opacity: 1;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
-}
 
 dl:hover {
   color: grey;

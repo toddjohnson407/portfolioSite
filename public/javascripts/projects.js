@@ -2,10 +2,6 @@
 
 'use-strict';
 
-$('.card').click(function(){
-  $(this).toggleClass('flipped');
-});
-
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -18,5 +14,6 @@ var activateProjects = async function() {
 
 var projects = document.getElementById('projects');
 
-window.onload = function() { activateProjects() };
-// activateProjects();
+// window.onload = function() { activateProjects() };
+
+activateProjects();
