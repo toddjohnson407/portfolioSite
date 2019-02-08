@@ -661,10 +661,13 @@ figexent: 200%;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  -moz-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  -moz-grid-rows: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   -webkit-box-align: center;
+  -
   opacity: 0.0;
 }
 
@@ -703,6 +706,8 @@ figexent: 200%;
   color: white !important;
   padding: 1vh 2vh 1vh 2vh;
   opacity: 0.0;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
 
 @-webkit-keyframes title-fade {
