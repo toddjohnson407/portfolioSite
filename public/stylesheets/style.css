@@ -112,8 +112,9 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-items: left;
   margin-top: 4vh;
+  margin-right: 5vh;
 }
 
 .navigate-items {
@@ -442,6 +443,8 @@ figexent: 200%;
   align-items: center;
   justify-items: center;
   text-align: center;
+  width: 18vh;
+  margin: 0vh 2vh 0vh 2vh;
 }
 
 .white-back {
